@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>micro:bit Lab – wiring guides for young builders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>micro:bit Lab</h1>
+  <p>Wire it up, then code it. Pick a project and a setup.</p>
+</header>
+<main>
+  <div class="bar">
+    <div class="seg" id="projects" role="group" aria-label="Project"></div>
+    <div class="seg" id="modes" role="group" aria-label="Setup">
+      <button data-mode="alone" aria-pressed="true">micro:bit alone</button>
+      <button data-mode="board" aria-pressed="false">With expansion board</button>
+    </div>
+    <button class="print" onclick="window.print()">Print this guide</button>
+  </div>
+  <h2 id="title"></h2>
+  <p id="intro" class="lead"></p>
+  <div class="grid">
+    <figure id="fig"></figure>
+    <aside>
+      <h3>Build steps</h3>
+      <p class="hint">Tap a step to light up its wire.</p>
+      <ol id="steps"></ol>
+      <p id="note" class="note"></p>
+      <h3>Parts</h3>
+      <ul id="parts" class="chips"></ul>
+    </aside>
+  </div>
+  <section>
+    <h3>Code blocks <span class="hint">(makecode.microbit.org)</span></h3>
+    <div id="blocks"></div>
+    <p id="blockinfo" class="lead"></p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
